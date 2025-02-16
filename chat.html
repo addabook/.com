@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addabook - Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.png" alt="Addabook Logo" class="navbar-logo">
+        <a href="newsfeed.html">Newsfeed</a>
+        <a href="profile.html">Profile</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <h3>Select a user to chat</h3>
+    <select id="receiver"></select>
+    
+    <textarea id="chatText" placeholder="Type a message..."></textarea>
+    <button onclick="sendMessage()">Send</button>
+
+    <h3>Chat History</h3>
+    <div id="chatHistory"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
